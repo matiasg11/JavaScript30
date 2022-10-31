@@ -1,0 +1,68 @@
+html {
+    background: #018DED url(https://media4.giphy.com/media/IuVFGSQZTd6TK/giphy.gif?cid=790b7611bbccf2900431da3b8343fe56475d6422768345e3&rid=giphy.gif&ct=g);
+    background-size: cover;
+    background-position: 50% 50%;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+  }
+
+  body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    background: rgba(218, 165, 32, 0.1);
+  }
+
+  .clock {
+    width: 25em;
+    height: 25em;
+    border: 20px solid rgb(29, 29, 29);
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+      0 0 0 4px rgba(0,0,0,0.1),
+      inset 0 0 0 3px rgb(145, 110, 21),
+      inset 0 0 10px black,
+      0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+  }
+
+  .hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;/*/I move the pivot point to the right side.*/
+    transform: rotate(90deg);
+    transition: all 0.15s;
+    transition-timing-function: cubic-bezier(1.175, 0.885, 7.32, 5.275)
+
+  }
+
+  .hour-hand{
+    width: 30%;
+    left:20%;
+    background: red;
+  }
+
+  .min-hand{
+    background:green;
+  }
+
+  .second-hand{
+    height: 3px;
+    background: blue;
+  }
