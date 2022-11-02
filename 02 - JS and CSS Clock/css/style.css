@@ -47,22 +47,24 @@ html {
     top: 50%;
     transform-origin: 100%;/*/I move the pivot point to the right side.*/
     transform: rotate(90deg);
-    transition: all 0.15s;
-    transition-timing-function: cubic-bezier(1.175, 0.885, 7.32, 5.275)
+    transition: all 0.75s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 2.55, 0.95)
 
   }
 
   .hour-hand{
     width: 30%;
     left:20%;
-    background: red;
+    background: rgb(230, 230, 230);
+
   }
 
   .min-hand{
-    background:green;
+    background: rgb(230, 230, 230);
+
   }
 
   .second-hand{
     height: 3px;
-    background: blue;
+    background: rgb(230, 230, 230);
   }
